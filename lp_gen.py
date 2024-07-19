@@ -59,7 +59,6 @@ def solve(rows, cols, bases, edges, evaluate=True):
 
     if s.check() == unsat:
         return None
-        return s
     else:
         s = s.model()
         if not evaluate:
